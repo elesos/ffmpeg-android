@@ -5,6 +5,9 @@ libpng-*
 expat-*
 fribidi-*
 lame-*
+fontconfig
+
+
 
 # Created by http://www.gitignore.io
 
