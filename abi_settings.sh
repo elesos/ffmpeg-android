@@ -31,8 +31,8 @@ fi
 CROSS_PREFIX=${TOOLCHAIN_PREFIX}/bin/${NDK_CROSS_PREFIX}-
 NDK_SYSROOT=${TOOLCHAIN_PREFIX}/sysroot
 
-export PKG_CONFIG_LIBDIR="${TOOLCHAIN_PREFIX}/lib/pkgconfig"
-
+export PKG_CONFIG_LIBDIR="${INSTALL_PREFIX}/lib/pkgconfig"
+echo "PKG_CONFIG_LIBDIR=${INSTALL_PREFIX}/lib/pkgconfig"
 if [ $3 == 1 ]; then
   export CC="${CROSS_PREFIX}gcc --sysroot=${NDK_SYSROOT}"
   export LD="${CROSS_PREFIX}ld"
